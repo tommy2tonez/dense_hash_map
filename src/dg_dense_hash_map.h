@@ -404,7 +404,7 @@ namespace dg::dense_hash_map{
                                          size_type bucket_count,
                                          const Allocator& allocator): unordered_node_map(init_list.begin(), init_list.end(), bucket_count, Hasher(), allocator){}
 
-            constexpr void rehash(size_type tentative_new_cap){
+            __attribute__((noinline)) constexpr void rehash(size_type tentative_new_cap){
 
                 if (tentative_new_cap <= this->capacity()){
                     return;

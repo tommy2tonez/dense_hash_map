@@ -15,27 +15,78 @@ int main(){
         map[i] = i;
     }
 
-    // for (size_t i = 0u; i < SZ; ++i){
-    //     total += map.find(i)->second;
-    // }
-
     for (size_t i = 0u; i < SZ; ++i){
-        map.erase(i);
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+        total += std::as_const(map).find(i)->second;
+
     }
 
-    // // map.clear();
-
-    for (size_t i = 0u; i < SZ; ++i){
-        map[i] = i;
-    }
+    // // for (size_t i = 0u; i < SZ; ++i){
+    // //     total += map.find(i)->second;
+    // // }
 
     // for (size_t i = 0u; i < SZ; ++i){
-    //     total += ceil2(static_cast<uint32_t>(i));
-    //     // std::cout << i << "<>" << ceil2(i) << std::endl;
+    //     map.erase(i);
     // }
+
+    // // // map.clear();
+
+    // for (size_t i = 0u; i < SZ; ++i){
+    //     map[i] = i;
+    // }
+
+    // // for (size_t i = 0u; i < SZ; ++i){
+    // //     total += ceil2(static_cast<uint32_t>(i));
+    // //     // std::cout << i << "<>" << ceil2(i) << std::endl;
+    // // }
 
     auto now = std::chrono::high_resolution_clock::now();
     auto lapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - then).count();
 
-    std::cout << map.size() << "<total>" << lapsed << "<ms>" << std::endl;
+    std::cout << total << "<total>" << lapsed << "<ms>" << std::endl;
 }
